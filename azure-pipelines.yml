@@ -41,4 +41,4 @@ stages:
          connectionType: Kubernetes Service Connection
          kubernetesServiceEndpoint: aks-remoteshutdown-connection
          command: create
-         arguments: secret generic xyss11 -n dev-remoteshutdown
+         arguments: secret generic thisisasecret -n dev-remoteshutdown
