@@ -20,13 +20,13 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: Docker@2
-      displayName: Build and push an image to container registry
-      inputs:
-        command: buildAndPush
-        repository: starterjavascript
-        tags: 1.0
-        containerRegistry: csgdtc_registry_connection
+    # - task: Docker@2
+    #   displayName: Build and push an image to container registry
+    #   inputs:
+    #     command: buildAndPush
+    #     repository: starterjavascript
+    #     tags: 1.0
+    #     containerRegistry: csgdtc_registry_connection
 
     - task: Kubernetes@1
       displayName: kubectl create
