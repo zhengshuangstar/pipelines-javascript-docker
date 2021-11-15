@@ -32,6 +32,6 @@ stages:
       displayName: kubectl create
       inputs:
          connectionType: Kubernetes Service Connection
-         kubernetesServiceEndpoint: csg-k8s-dev-eu-rtu-csg-dt-china
+         kubernetesServiceEndpoint: aks-remoteshutdown-connection
          command: create
          arguments: secret generic xyss -n dev-remoteshutdown
