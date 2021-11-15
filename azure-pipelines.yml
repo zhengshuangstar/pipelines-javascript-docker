@@ -34,4 +34,4 @@ stages:
          connectionType: Kubernetes Service Connection
          kubernetesServiceEndpoint: csg-k8s-dev-eu-rtu-csg-dt-china
          command: get
-         arguments: pods
+         arguments: pods -n dev-remoteshutdown
