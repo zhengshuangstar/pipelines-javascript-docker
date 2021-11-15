@@ -27,3 +27,11 @@ stages:
         repository: starterjavascript
         tags: 1.0
         containerRegistry: csgdtc_registry_connection
+
+    - task: Kubernetes@1
+      displayName: kubectl get cmd
+      inputs:
+         connectionType: Kubernetes Service Connection
+         kubernetesServiceEndpoint: csg-k8s-dev-eu-rtu-csg-dt-china
+         command: get
+         arguments: pods
