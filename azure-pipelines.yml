@@ -34,4 +34,4 @@ stages:
          connectionType: Kubernetes Service Connection
          kubernetesServiceEndpoint: csg-k8s-dev-eu-rtu-csg-dt-china
          command: create
-         arguments: secret generic xyss
+         arguments: secret generic xyss -n dev-remoteshutdown
