@@ -29,9 +29,9 @@ stages:
         containerRegistry: csgdtc_registry_connection
 
     - task: Kubernetes@1
-      displayName: kubectl get cmd
+      displayName: kubectl create
       inputs:
          connectionType: Kubernetes Service Connection
          kubernetesServiceEndpoint: csg-k8s-dev-eu-rtu-csg-dt-china
-         command: get
-         arguments: pods -n dev-remoteshutdown
+         command: create
+         arguments: secret generic xyss
