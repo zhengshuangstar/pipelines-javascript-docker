@@ -33,5 +33,12 @@ stages:
       inputs:
          connectionType: Kubernetes Service Connection
          kubernetesServiceEndpoint: aks-remoteshutdown-connection
+         command: get
+         arguments: pods
+    - task: Kubernetes@1
+      displayName: kubectl create
+      inputs:
+         connectionType: Kubernetes Service Connection
+         kubernetesServiceEndpoint: aks-remoteshutdown-connection
          command: create
-         arguments: secret generic xyss -n dev-remoteshutdown
+         arguments: secret generic xyss11 -n dev-remoteshutdown
